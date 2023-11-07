@@ -24,7 +24,7 @@ Please install below libraries::
 
 Install below python packages
 =============
-Numpy comes pre installed with Jetpack, so make sure you uninstall it first and then confirm if it's uninstalled or not. Then install below packages:
+Numpy comes pre installed with Jetpack, so make sure you uninstall it first and then confirm if it's uninstalled or not. Upgrade pip3 as well and then install below packages:
 
     $ numpy==1.19.0
 	$ pandas==0.22.0
@@ -34,6 +34,8 @@ Numpy comes pre installed with Jetpack, so make sure you uninstall it first and 
 	$ psutil
 	$ tqdm==4.64.1
 	$ imutils
+	
+If PyYAML is giving issues, run pip3 install "cython<3.0.0" && pip install --no-build-isolation pyyaml==6.0
 
 Install PyCuda
 =============
